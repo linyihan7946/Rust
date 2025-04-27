@@ -1,0 +1,23 @@
+{
+  "name": "rust-wasm-demo",
+  "version": "1.0.0",
+  "description": "Demo for calling Rust WASM from TypeScript",
+  "main": "index.js",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "rust_project": "file:pkg"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "vite": "^5.0.0",
+    "@types/node": "^20.0.0"
+  }
+}
