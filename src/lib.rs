@@ -21,4 +21,13 @@ impl Point {
     pub fn distance(&self) -> f64 {
         (self.x * self.x + self.y * self.y).sqrt()
     }
+}
+
+#[wasm_bindgen]
+pub fn calculate_sum() -> u64 {
+    let mut sum: u64 = 0;
+    for i in 0..100_000_000 {
+        sum += i;
+    }
+    sum
 } 
