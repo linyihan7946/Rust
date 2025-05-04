@@ -1,4 +1,4 @@
-import init, { greet, Point, calculate_sum } from 'rust_project';
+import init, { greet, Point, calculate_sum } from '../pkg/rust_project';
 
 // TypeScript 版本的循环计算
 function calculateSumTS(): number {
